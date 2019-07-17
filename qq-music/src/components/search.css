@@ -1,0 +1,116 @@
+.mod_search_bar {
+    background: #f4f4f4;
+    padding: 0.2rem;
+    display: -webkit-box;
+    box-sizing: border-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-align: center;
+    display: flex;
+}
+.mod_search_bar .search_bar_cont {
+    position: relative;
+    border-radius: 0.03rem;
+    background: #fff;
+    flex: 1;
+    height: 0.7rem;
+    padding: 0.16rem 0.34rem 0.16rem 0.6rem;
+}
+/* 搜索 */
+.mod_search_bar .search_bar_cont #search_input {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    width: 100%;
+    color: rgba(0,0,0,.3);
+    border: none  !important;
+    outline:none  !important;
+    font-size: 0.24rem;
+    border-color: transparent;
+}
+#search_input:focus {
+    border: none  !important;
+    border-bottom: 1px solid white !important;
+    box-shadow: none;
+}
+.mod_search_bar .search_bar_tip_text {
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+    font-size: 0.24rem;
+    height: .7rem;
+    line-height: .7rem;
+    display: none;
+}
+
+/* 热门搜索 */
+.mod_search_result{
+    background: #fff;
+    padding: 0.15rem 0.15rem 0.1rem 0.15rem;
+}
+.mod_search_result .result_tit {
+    color: rgba(0,0,0,.6);
+    margin-bottom: 0.08rem;
+}
+.mod_search_result .tag_s {
+    display: inline-block;
+    font-size: 0.24rem;
+    padding: 0 0.2rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    color: #000;
+    border: 0.01rem solid rgba(0,0,0,.6);
+    border-radius: 0.99rem;
+    word-break: keep-all;
+    margin-bottom: 0.2rem;
+    margin-right: 0.24rem;
+}
+
+/* icon图标 */
+.iconStyle{
+    position:absolute;
+    right: .2rem;
+    top:center;
+    transform: translateY(50%)
+}
+.iconStyle1{
+    font-size: .3rem;
+    color: #000;
+    position:absolute;
+    left: .2rem;
+    top:50% ;
+    transform: translateY(-50%)
+}
+
+/* 搜索列表 */
+.mod_search_result_list{
+    background: #fff;
+
+}
+.mod_search_result_list_con{
+    border-bottom: 1px solid #999;
+    overflow: hidden;
+}
+.music_icon{
+    float: left;
+    width: .8rem;
+    font-size: .6rem;
+    text-align: center;
+    color: #999;
+}
+.music_icon img{
+    width: 100%;
+}
+.mod_search_result_list_tit{
+    font-size: 0.28rem;
+    color: #000;
+    height: .5rem;
+    line-height: .5rem;
+    margin-bottom: .08rem;
+}
+.mod_search_result_list_singer{
+    font-size: .2rem;
+    height: .3rem;
+    line-height: .3rem;
+    margin-bottom: .1rem;
+}
+.lookMore{
+    text-align: center;
+}

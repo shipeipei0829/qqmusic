@@ -1,0 +1,218 @@
+.list{
+    height: 100%;
+    color: grey;
+    background-color: #f8f8f8;
+}
+/* 顶部固定定位 */
+.top_bar {
+    
+    height: 1rem;
+}
+.top_bar__box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    height: 1rem;
+    padding: 0 0.4rem;
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    background-color: #f8f8f8;
+}
+.top_bar__media {
+    display: block;
+    margin-right: 0.2rem;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.top_bar__media_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.45rem;
+}
+.top_bar__bd {
+    -webkit-box-flex: 1;
+}
+.top_bar__tit {
+    font-size: 0.28rem;
+    color: #121212;
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.top_bar__btn {
+    display: block;
+    min-width: 0.56rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    padding: 0 0.23rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #121212;
+    border: solid 0.01rem #b3b3b3;
+    border-radius: 0.23rem;
+}
+/* 列表部分 */
+.player {
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+    margin: 0.12rem 0 0.33rem;
+}
+.player__cover {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.4rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.18rem;
+    box-shadow: 0 0.27rem 0.23rem rgba(0,0,0,.21);
+    background-color: #dbdbdb;
+    -webkit-user-select: none;
+}
+.player__cover_img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.28rem;
+}
+.player__info {
+    margin-bottom: 0.12rem;
+    margin: 0 auto;
+    max-width: 84%;
+    text-align: center;
+}
+.player__info_tit {
+    margin-bottom: 0.12rem;
+    font-size: 0.32rem;
+    color: #121212;
+}
+.player__info_txt {
+    margin-bottom: 0.22rem;
+    font-size: 0.28rem;
+    color: #121212;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+.player__info_desc {
+    font-size: 0.24rem;
+    color: grey;
+    width: 100%;
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.player__btn {
+    display: block;
+    margin: 0 auto;
+    width: 3.1rem;
+    height: 0.7rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.06rem 0.32rem rgba(24,213,156,.5);
+    background-color: #22d59c;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    
+}
+/* icon图标 */
+.player__btn .iconStyle2{
+    font-size: 0.6rem;
+    color: #fff;
+}
+/* 列表明细 */
+.count_box {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    margin: 0 0.26rem -0.05rem;
+    font-size: 0.12rem;
+}
+.count_box__txt {    
+    color: grey;
+    -webkit-user-select: none;
+}
+.count_box__num {
+    margin-left: 0.15rem;
+}
+.mod_song_list {
+    margin-bottom: 0.43rem;
+    overflow: hidden;
+}
+.song_list__item {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    padding: 0.2rem 0.17rem 0.2rem .1rem;
+    height: 1.2rem;
+    box-sizing: border-box;
+    margin-bottom:-.2rem;
+}
+.song_list__index {
+    margin-right: -0.16rem;
+    width: 0.77rem;
+    font-weight: 400;
+    text-align: center;
+    height: 100%;
+}
+.song_list__index .song_list__index_num {
+    margin: 0 auto;
+    display: block;
+    font-size: .16rem;
+    color: grey;
+    height: 50%;
+}
+.song_list__index .song_list__index_change {
+    font-size: .12rem;
+    display: block;
+    color: grey;
+    height: 50%;
+}
+.song_list__bd {
+    margin-left: 0.16rem;
+    -webkit-box-flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+.song_list__tit {
+    display: block;
+    max-width: 100%;
+    font-size: 0.24rem;
+    color: #000;
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 50%;  
+    margin-bottom: 0;  
+}
+.song_list__desc {
+    font-size: 0.12rem;
+    color: rgba(0,0,0,.4);
+    overflow: hidden;
+    white-space: nowrap;
+    height: 50%;
+}
+/* 下载图标 */
+.song_list__ctrl {
+    width: 0.4rem;
+    height: 100%;
+    position: relative;
+}
+.iconStyle{
+    position: absolute;
+    top: 50%;
+    color: #999;
+    transform: translateY(-50%);
+    font-size: .34rem;
+}

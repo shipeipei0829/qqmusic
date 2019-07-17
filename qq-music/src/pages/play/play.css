@@ -1,0 +1,217 @@
+/* 顶部固定定位 */
+.play_top_bar {  
+    height: 1.3rem;
+}
+.play_top_bar__box{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    padding: 0 0.4rem 0 0.1rem;
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    background-color: #fff;
+    /* background: red; */
+}
+.play_top_bar__media {
+    display: block;
+    margin-right: 0.2rem;
+    width: 1rem;
+    height: 1rem;
+}
+.play_top_bar__media_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.45rem;
+}
+.play_top_bar__bd {
+    -webkit-box-flex: 1;
+}
+.play_top_bar__tit {
+    font-size: 0.28rem;
+    color: #121212;
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.play_top_bar__btn {
+    display: block;
+    min-width: 0.56rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    padding: 0 0.14rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #121212;
+    border: solid 0.01rem #b3b3b3;
+    border-radius: 0.23rem;
+}
+/* 歌词 */
+.main {
+    position: relative;
+    padding-bottom: .3rem;
+    overflow: hidden;
+}
+.main__bd {
+    position: relative;
+    z-index: 4;
+}
+.song_name {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    margin-top: .4rem;
+}
+.song_name__text {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: .36rem;
+    font-weight: 400;
+    color: #000;
+}
+.singer_name {
+    margin: 0 .2rem .15rem;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: .26rem;
+}
+.song_info__bd {
+    position: relative;
+    height: 4rem;
+}
+
+
+
+.fade_in {
+    -webkit-animation: ani_fade_in 250ms ease-in-out forwards;
+    pointer-events: auto;
+}
+/* tu */
+.album_cover{
+    position: relative;
+    height: 4rem;
+    text-align: center;
+    box-shadow: 0 0.05rem 0.2rem rgba(0,0,0,.2);
+}
+.album_cover img{
+    width: 4rem;
+    height: 4rem;
+    /* margin: 0 auto; */
+}
+.lyric {
+    position: absolute;
+    /* top: .4rem; */
+    left: 0;
+    z-index:10;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    width: 100%;
+    height: 4rem;
+    overflow: auto;
+    /* padding:.3rem 0; */
+}
+.fade_in {  
+    pointer-events: auto;
+    -webkit-mask: -webkit-linear-gradient(top,rgba(0,0,0,0),#fff 25%,#fff 75%,rgba(0,0,0,0));
+    -webkit-animation: ani_fade_in 250ms ease-in-out forwards;
+}
+
+.lyric {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0; */
+}
+.songDetails{
+    text-align: center;
+}
+.lyric__bd{
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 0rem;
+    transition: top 0.5s;
+    
+}
+.lyric__bd p{
+    line-height: .4rem;
+    height: .4rem;
+}
+/* .lyric__more {
+    display: block;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    height: .3rem;
+    margin-top: .6rem;
+    font-size: .28rem;
+    color: #000;
+} */
+.opt {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    height: .9rem;
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+}
+.opt_icon {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    margin: 0 .4rem;
+    border: solid 1px rgba(0,0,0,.2);
+    width: .7rem;
+    height: .7rem;
+    border-radius: 50%;
+    font-size:.3rem;
+    color: #000;
+    font-weight: 500;
+}
+.btn_download {
+    display: block;
+    width: 4rem;
+    height: .7rem;
+    line-height: .7rem;
+    margin: 0 auto;
+    letter-spacing: .01rem;
+    text-align: center;
+    font-size: .18rem;
+    border-radius: .35rem;
+    color: #fff;
+    background: #31c27c;
+}
+.lineheight{
+    color: #31c27c
+}
+.audio_box{
+    width: 100%;
+    height: 1rem;
+    position: relative;
+}
+audio{
+    position: absolute;
+    left:50%;
+    top: 0.2rem;
+    transform: translateX(-50%)
+}

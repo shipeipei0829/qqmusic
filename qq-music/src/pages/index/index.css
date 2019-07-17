@@ -1,0 +1,61 @@
+.index{
+    background-color: #f4f4f4;
+}
+/* 头部 */
+.top_box{
+    padding-top: 1.4rem;
+}
+.top_box_bd{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    box-shadow: 0 0.05rem 0.05rem rgba(0,0,0,.02);
+    background: #fff;
+    height: 1.4rem;
+    padding: 0 0.2rem;
+}
+.logo{
+    display: block;
+    height: 0.6rem;
+
+}
+.top_box_btn{
+    display: block;
+    min-width: .6rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    padding: 0 0.2rem;
+    text-align: center;
+    font-size: 0.26rem;
+    color: #000;
+    border: solid 0.01rem rgba(0,0,0,.3);
+    border-radius: 0.4rem;
+}
+
+/* 导航 */
+.nav{
+    display: -webkit-box;
+    background: #fff; 
+}
+.nav a{
+    -webkit-box-flex: 1;
+    position: relative;
+    display: block;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.28rem;
+    color:#555;
+    
+}   
+.nav .select{
+    color:#31c27c;
+    border-bottom:2px solid #31c27c;
+}
+
